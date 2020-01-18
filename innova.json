@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "innovator-s-summit-22822",
+  "private_key_id": "fc378cd01445987adf7865284eee6df29bbd70b0",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEuwIBADANBgkqhkiG9w0BAQEFAASCBKUwggShAgEAAoIBAQC415nd10Bct9nj\nNsncc7WcQmmjyL2KAikm6nqp4cygAwfeDsKtDiJq/yE/2JEKrukj92FOGtBVJEUu\nRhz70KaNVPK31fjDdfe+ajeKcFygkSJHpIa/qsPfsoH3rvKRkB/2gTOf5STxNJHC\n/gudu2liqAJzNReMd3F1j/KeSLOUloN5bnV6LZ0qgWhFYxV7yCO34+GOrCr/Mr+P\nhtQU2f1L7OEJtRm8qbh3ZZ5XDnXod8ihz+CfuFxWEmRaAUxk9s2HbFbnBZhxTFh0\ncl4ot6R3326X+wwnILtA6PUYXXJIIHBoUg7d1tc9WX/ORoKrD8EQksQOqDpbZXIs\nBKTbYRtjAgMBAAECgf99CKV/YD6OXZdrBJwBmlG8jUGMF8Q6mHGRcg0RMQHTLYEO\nQb7KnBNrpgEn56cNLfXAduuye/3sn0pyZ8+RVMG6Far4wU5SlgwuyPI2xK1UyAAf\nGfJ4d5LHeTyiAhcxIwIXARApduxeTpfien5pyBamE2GtRWS583jIyZFtCjOexKDl\nSPMD0Zm2Yc5xj0lGUKi81kHOsw3eEUhKfnU3YD/AvHaceVipB9RMyTrxRTPUk37c\nGgqXTqa15rAYFfv82uk1jKRnbPIX5Olz+dbUemlL8U63Idu9YPwAwl1idXVwTj6f\nKQFLj1NRvgcYMBTPDYsg8zQcEsA6ryFfsy22KoECgYEA9GNj8B2L8SSC3XCcOEny\nr3JXf4dD83pfykXdPXhZjjO7LRIUaiLGNUttHGGtwC7GNIwe50lCe1izI5PwhWAq\nUbCw4q9CCuaSoV0XIb32MgXlwPtuGJZ+CWUVZ+jtDsUADvkIxvQfeWqX9kxSbO2+\nDfCfxnsW/WlzWmq7vuI8gT8CgYEAwZ/shSjuhQiDo2VIDEC5QLv5rOxJ3A0Pv/X1\n20NsxPAe1s1z2y3JXZrE9+aovfQgtujpU4bUgUkGlBwIHQjOrMy4HRimNCqXEALQ\n0V7C/bMUzXvMyYGsNCkOw5RvuargXbXl/bTJwfRBPD4yC4mAGlahn9n8joTxbjIz\nCxtweN0CgYBABf27fPIZdXg3LPYwJOdIIUtc5IHfulJ3+j+QiAPmJhVGJHNmrr+A\nXMcz5T8QlvBj+cVq0B1zlPQxQOOE/YF4rzJX4JQLqQYG8g1KUKq7xiG/od7g4CQa\nr/mgpDveX6u5QHKVNIU+WLeA1dPOJ6ZfnoctBzgpoUOQD2AqDLjPHwKBgQCyBDTS\n4KUbDo7oxQ+OpFsuFyUgRUZK2H9of9yAsObp0dKortAb7Wa7drYtLZZqvm7tfAo5\nTzdFfjxcI8GZ4CUUXkvQBH+aaqXkhJI0TKl90w4HNhE8GsqWUkFOs8RcsawCvGAt\n9++fMNBhcNVWIh7zGD8U1rgK2FOYevLO/XVUyQKBgF/03TeM4BehkzQIt/5hZfCa\nUATORCU/qGbci1kD27xjrogEo6D9Cd2KzJ3iG8mAkQ/FMTH+FLUrUT+/QnR+22Sc\nwDv1Si/G94bZaNvugavLaZtmlhavtCOHuxrnytPZ18HO+VjBlXtk5t4enXOUBHHm\ne6QwUoMBbtwkx/IfVTKz\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-v3566@innovator-s-summit-22822.iam.gserviceaccount.com",
+  "client_id": "111694977869366577002",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-v3566%40innovator-s-summit-22822.iam.gserviceaccount.com"
+}
