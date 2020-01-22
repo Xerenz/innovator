@@ -1,26 +1,53 @@
 import csv
+import itertools
 
-instamojo_list = []
-firebase_list = []
+mapping = {
+	'Innovator Summit Ticket - Track-2 - Professional' : ('Combo Track-2', 'Professional'),
+	'Innovator Summit Ticket - Track-2 - Student' : ('Combo Track-2', 'Student'),
+	'Professional - Session Ticket' : ('Talks Only', 'Professional'),
+	'Professional - Workshop ticket' : ('Workshops Only', 'Professional'),
+	'Student - Session Ticket' : ('Talks Only', 'Student'),
+	'Student - Workshop ticket' : ('Workshops Only', 'Student'),
+	"Innovator's Summit Ticket - Track-1 - Student" : ('Combo Track-1', 'Student'),
+	"Innovator's Summit Ticket - Track-1 - Professional" : ('Combo Track-1', 'Professional'),
+	'Link/Purpose' : ('none', 'none'),
+	'Sponsor' : ('none', 'none')
+}
 
-with open('innova.csv') as f:
+with open('Transactions2.csv') as f:
 	reader = csv.reader(f, delimiter=',')
-	for row in reader:
-		firebase_list.append(row)
+	instamojo_list = [row for row in reader]
 
-with open('Transaction.csv') as f:
+
+with open('firebase-db.csv') as f:
 	reader = csv.reader(f, delimiter=',')
-	for row in reader:
-		instamojo_list.append(row[9])
+	firebase_list = [row for row in reader]
 
-unique = []
+valid_entries = []
 
-for i in set(instamojo_list):
-	for reg in firebase_list:
-		if i in reg:
-			unique.append(reg)
+print(firebase_list[0])
 
-with open('innovator summit.csv', 'w') as f:
+# 6, 8
+for row in instamojo_list:
+	t, p = mapping[row[6]]
+
+	for fire_row in firebase_list:
+		if (fire_row[1] == row[8] and
+			fire_row[4] == row[9] and
+			t == fire_row[5] and 
+			p == fire_row[3]):
+			valid_entries.append(fire_row)
+
+print(len(valid_entries))
+
+valid_entries.sort()
+
+valid_entries = [k for k, _ in itertools.groupby(valid_entries)]
+
+print(len(valid_entries))
+
+
+with open('sorted.csv', 'w') as f:
 	writer = csv.writer(f, delimiter=',')
-	for row in unique:
+	for row in valid_entries:
 		writer.writerow(row)

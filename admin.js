@@ -7,7 +7,7 @@ admin.initializeApp({
 });
 
 csvWriter = csv({
-    path : "./innova.csv",
+    path : "./firebase-db.csv",
     header : [
         {id : "name", title : "Name"},
         {id : "email", title : "email"},
@@ -15,6 +15,7 @@ csvWriter = csv({
         {id : "prof", title : "Profession"},
         {id : "phone", title : "Phone no."},
         {id : "pref", title : "Preference"},
+        {id : "food", title : "Food"},
         {id : "tshirt", title : "T-shirt"},
     ]
 });
