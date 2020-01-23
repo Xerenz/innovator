@@ -1,5 +1,6 @@
 from PyPDF2 import PdfFileWriter, PdfFileReader
 import io
+import csv
 
 from reportlab.pdfgen import canvas
 from reportlab.pdfbase import pdfmetrics
@@ -32,6 +33,7 @@ def createpage(name):
     # Code to centre a string between a starting and ending coordinates.
 
     can.setFont('RobotoB', 120)
+    can.setFillColorRGB(85./255, 63./255, 153./255)
 
     # You'll have to determine the following values with the help of the helper file, get_pdf_coordinates.py
     start = 0
@@ -63,11 +65,7 @@ def createpage(name):
     return page
 
 
-
-if __name__=="__main__":
-
-    name = 'JITHIN K SATHEESH'
-
+def create_one(name):
     name = name.upper()
     output = PdfFileWriter()
 
@@ -78,4 +76,15 @@ if __name__=="__main__":
     outputStream = open("id_card/"+name+".pdf", "wb")
     output.write(outputStream)
     outputStream.close()
-    print('certificate generated for ' + name)
+    print('certificate generated for ' + name)    
+
+if __name__=="__main__":
+
+    '''
+    with open('../newTransactions.csv', 'r') as f:
+        reader = csv.reader(f, delimiter=',')
+        names = [row[7] for row in reader]
+
+    for name in names:
+        create_one(name)'''
+    create_one('arundhati')        
