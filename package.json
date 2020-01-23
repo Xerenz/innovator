@@ -1,0 +1,22 @@
+{
+  "name": "innovator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "admin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xerenz/innovator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Xerenz/innovator/issues"
+  },
+  "homepage": "https://github.com/Xerenz/innovator#readme",
+  "dependencies": {
+    "nodemailer": "^6.4.2"
+  }
+}
