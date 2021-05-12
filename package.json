@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/Xerenz/innovator#readme",
   "dependencies": {
-    "nodemailer": "^6.4.2"
+    "nodemailer": "^6.4.16"
   }
 }
